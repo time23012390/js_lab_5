@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTransactions</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <script src="./src/index.js" type = "module" defer></script>
+</head>
+<body style="background-color: #ffebeb;">
+    <div class="form_style">
+        <form id="transactionForm">
+            <input type="number" name="amount" placeholder="Сумма" required> <br>
+            <label for="category">Выберите категорию:</label> <br>
+            <select id="category" name="category" required>
+                <option value="Переводы средств">Переводы средств</option>
+                <option value="Оплата товаров и услуг">Оплата товаров и услуг</option>
+                <option value="Снятие наличных и пополнение счета">Снятие наличных и пополнение счета</option>
+                <option value="Кредиты и займы">Кредиты и займы</option>
+                <option value="Инвестиционные операции">Инвестиционные операции</option>
+            </select> <br>
+            <textarea name="description" required></textarea> <br>
+            <button type="submit">Добавить</button>
+        </form>
+    </div>
+    <table id = "transactionTable" border = "1">
+        <thead>
+            <tr>
+                <th>Дата и Время</th>
+                <th>Категория транзакции</th>
+                <th>Краткое описание транзакции</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+
+    </table>
+
+    <div>
+        <p>Общая сумма: <span id="sum"></span></p>
+    </div>
+    <div id="details"></div>
+</body>
+</html>

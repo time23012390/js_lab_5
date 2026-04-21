@@ -1,0 +1,61 @@
+.form_style {
+    text-align: left;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    background: 
+        linear-gradient(to right, rgb(204, 0, 255), blue) padding-box,
+        linear-gradient(to right, red, blue) border-box;
+    margin: 2px;
+    width: 50%;
+    margin: 5px auto;
+    padding: 5px;
+    padding-left: 10px;
+}
+div{
+    width: 60%;
+    margin: 5px auto;
+}
+table{
+    text-align: left;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    background: 
+        linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255)) padding-box,
+        linear-gradient(to right, red, blue) border-box;
+    margin: 2px;
+    width: 60%;
+    margin: 5px auto;
+    padding: 5px;
+    padding-left: 10px;
+}
+td,
+th{
+    border-radius: 10px;
+    margin: 5px;
+    padding: 15px;
+}
+th{
+    background-color: rgba(146, 146, 255, 0.677);
+}
+input[type="number"],
+select,
+textarea{
+    padding: 2px;
+    margin: 5px;
+    border: 1px solid blue;
+}
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    background-color: rgb(0, 0, 0);
+    border: 3px solid #555;
+    color: #ffd500d0;
+    border: none;
+}
+input[type="number"]::selection,
+select::selection,
+textarea::selection,
+label::selection {
+    background-color: #847116;
+    color: #000;
+}
