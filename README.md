@@ -28,9 +28,8 @@ Nicolai Calin, asistent universitar</p>
 ---
 
 # Цель работы
-Цель работы
 
-Изучить работу с DOM (Document Object Model), обработку событий в JavaScript, использование модульной структуры (import/export), создание динамического интерфейса (таблица, форма), основы архитектуры клиентского приложения.
+Изучить работу с DOM (Document Object Model), обработку событий в JavaScript, использование модульной структуры (import/export), создание динамического интерфейса (таблица, форма), а также основы архитектуры клиентского приложения.
 
 ## Шаг 1. Настройка и структурирование проекта
 
@@ -39,7 +38,7 @@ Nicolai Calin, asistent universitar</p>
 Структура проекта:
 
 ```
-project/
+js_lab_5/
 │
 ├── index.html
 ├── style.css
@@ -173,6 +172,7 @@ function deleteTransaction(id, row){
     removeTransactionFromArray(id);
     removeRow(row);
     updateTotal(calculateTotalFromArray());
+    showDetails("");
 }
 ```
 
